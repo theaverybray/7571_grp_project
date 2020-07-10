@@ -15,7 +15,22 @@
   <body>
     <div class="container-fluid">
         <h1>Editing Your Reading Challenge</h1>
+        <button id="resetChallenge" type="button" class="btn btn-primary">Start a New Challenge</button>
         <h2>I want to read <input id="numberOfBooks" type="number"> books by <input id="date" type="date">.</h2>
+
     </div>
 
   </body>
+
+  <script type="text/javascript">
+      document.getElementById("resetChallenge").addEventListener("click", resetChallenge);
+
+      var numberOfBooks = document.getElementById(numberOfBooks);
+
+      function resetChallenge(){
+          console.log("Reset Challenge");
+          console.log(numberOfBooks).value;
+          document.getElementById(numberOfBooks).value = 0;  // having issues here
+      }
+
+  </script>
