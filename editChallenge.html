@@ -51,10 +51,14 @@
 
       function resetChallenge(){
           console.log("Reset Challenge");
+          window.location.href = "index.html";  // goes back to index.html
       }
 
       function saveChallenge(){
         console.log("Save Challenge");
+        document.cookie = "challengeBooks=John Doe";  // cookies to store data about challenge between pages and sessions
+        document.cookie = "challengeDate=date";
+
         window.location.href = "index.html";  // goes back to index.html
       }
 
