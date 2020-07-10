@@ -15,22 +15,33 @@
   <body>
     <div class="container-fluid">
         <h1>Editing Your Reading Challenge</h1>
-        <button id="resetChallenge" type="button" class="btn btn-primary">Start a New Challenge</button>
-        <h2>I want to read <input id="numberOfBooks" type="number"> books by <input id="date" type="date">.</h2>
+        <button id="resetChallenge" type="button" class="btn btn-primary">Delete This Challenge</button>
+        <h2>I want to read <input id="challengeBooks" type="number"> books by <input id="challengeDate" type="date">.</h2>
+
 
     </div>
 
   </body>
 
+  <footer>
+    <hr />
+    <p>
+      MIST7571E: Final Project
+      <br />
+      Created by: Angel Moore, Anita Lee, Avery Bray,<br />
+      Jonathon Robinson, Lance Hunter, & Lauren Faulk
+    </p>
+    <img src="https://developer.nytimes.com/files/poweredby_nytimes_200a.png?v=1568441068443" alt="Data Provided By: The New York Times">
+  </footer>
+
   <script type="text/javascript">
       document.getElementById("resetChallenge").addEventListener("click", resetChallenge);
 
-      var numberOfBooks = document.getElementById(numberOfBooks);
+      var books = document.getElementById(challengeBooks);
 
       function resetChallenge(){
           console.log("Reset Challenge");
-          console.log(numberOfBooks).value;
-          document.getElementById(numberOfBooks).value = 0;  // having issues here
+          
       }
 
   </script>
